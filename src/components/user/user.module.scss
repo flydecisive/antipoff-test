@@ -1,0 +1,49 @@
+.wrapper {
+    box-sizing: border-box;
+    padding-top: 36px;
+    padding-bottom: 64px;
+    box-shadow: 0px 1px 3.98px 2px rgb(51 51 51 / 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.avatar {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+}
+
+.like {
+    stroke: #151317;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        fill: #512689;
+    }
+
+    &:active {
+        fill: #512689;
+    }
+
+    &__wrapper {
+        width: 30px;
+        height: 28px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}

@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import ProtectedRoute from "./protected-route";
-
+import Main from "../pages/main/main";
+import Register from "../pages/register/register";
+import Login from "../pages/login/login";
+import User from "../pages/user/user";
 interface AppRoutesProps {
   isAllowed: boolean;
 }
@@ -11,11 +14,11 @@ function AppRoutes({ isAllowed }: AppRoutesProps) {
       <Route
         element={<ProtectedRoute redirectPath="/login" isAllowed={isAllowed} />}
       >
-        <Route path="/" element />
-        <Route path="/user/:id" element />
+        <Route path="/" element={<Main />} />
+        <Route path="/user/:id" element={<User />} />
       </Route>
-      <Route path="/login" element />
-      <Route path="/register" element />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }

@@ -1,0 +1,17 @@
+.button {
+    width: 100%;
+    background-color: rgba(81, 38, 137, 1);
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(81, 38, 137, 0.85)
+    }
+
+    &:disabled {
+        background-color: rgb(128 129 133 / 20%);
+    }
+}

@@ -1,0 +1,15 @@
+.content {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 48px;
+}
+
+@media (max-width: 376px) {
+    .content {
+        grid-template-columns: 100%;
+        padding-top: 32px;
+    }
+}

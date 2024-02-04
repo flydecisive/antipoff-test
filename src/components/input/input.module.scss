@@ -1,0 +1,55 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+.input {
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: #808185;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding-right: 20px;
+    
+
+    &::placeholder {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+
+    &__wrapper {
+        border-radius: 8px;
+        padding: 16px;
+        position: relative;
+        background-color: #f8f8f8;
+        box-sizing: border-box;
+    }
+}
+
+.button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}

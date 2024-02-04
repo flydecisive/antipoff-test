@@ -1,0 +1,13 @@
+.button {
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #f8f8f8;
+    background-color: transparent;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(128 129 133 / 40%);;
+    }
+}
