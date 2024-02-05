@@ -25,6 +25,7 @@ export const appApi = createApi({
     }),
 
     // в запросах login и register пришлось замокать username: "eve.holt@reqres.in", потому что пользователей с другим username API не пропускает
+    // и вообще без username тоже, даже при login
 
     loginReq: builder.mutation({
       query: (args) => ({
