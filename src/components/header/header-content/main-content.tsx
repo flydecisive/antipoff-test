@@ -9,11 +9,12 @@ function MainHeaderContent() {
   const textContent = `Это опытные специалисты, хорошо разбирающиеся во всех задачах, которые
   ложатся на их плечи, и умеющие находить выход из любых, даже самых
   сложных ситуаций.`;
-  const { isMobile } = useAppContext();
+  const { isMobile, setIsAllowed } = useAppContext();
 
   const handleExitButton = () => {
     localStorage.clear();
     navigate("/login");
+    setIsAllowed(false);
   };
 
   return (
@@ -33,7 +34,7 @@ function MainHeaderContent() {
       <div className={styles.main__button}>
         {isMobile ? (
           <img
-            src="/public/exit.svg"
+            src="/exit.svg"
             alt="exit"
             className={styles.main__image}
             onClick={handleExitButton}

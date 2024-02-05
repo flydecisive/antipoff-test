@@ -5,7 +5,9 @@ import { AppContext } from "./contexts/app";
 import styles from "./App.module.scss";
 
 function App() {
-  const [isAllowed, setIsAllowed] = useState<boolean>(true);
+  const [isAllowed, setIsAllowed] = useState<boolean>(
+    localStorage.getItem("token") ? true : false
+  );
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 375);
 
   useEffect(() => {

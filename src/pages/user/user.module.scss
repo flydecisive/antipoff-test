@@ -8,6 +8,12 @@
     box-sizing: border-box;
     padding-left: 188px;
 
+    &_center {
+        padding-left: 80px;
+        padding-right: 80px;
+        justify-content: center;
+    }
+
     &__left {
         width: 630px;
         display: flex;

@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    gap: 16px;
 }
 
 .input {
@@ -15,7 +14,6 @@
     background-color: #f8f8f8;
     width: 100%;
     padding-right: 20px;
-    
 
     &::placeholder {
         opacity: 0.8;
@@ -32,6 +30,12 @@
         position: relative;
         background-color: #f8f8f8;
         box-sizing: border-box;
+        margin-top: 16px;
+        margin-bottom: 8px;
+
+        &_error {
+            border: 1px solid red;
+        }
     }
 }
 
